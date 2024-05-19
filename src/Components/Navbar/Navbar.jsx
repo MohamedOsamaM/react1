@@ -7,18 +7,18 @@ function Navbar() {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 bg-blue-900 py-5 z-50">
-        <div className="w-[90%] mx-auto flex flex-row justify-between text-white items-center relative">
-          <h1 className="font-black text-2xl"><Link to='/react1/'>STARTFRAMEWORK</Link></h1>
+        <div className="w-[90%] mx-auto flex md:flex-row flex-col justify-between text-white md:items-center relative">
+          <h1 className="font-black text-2xl"><Link to=''>STARTFRAMEWORK</Link></h1>
           <div className={isopen===false?"md:block hidden":"md:block block"}>
-            <ul className="gap-5 md:flex md:flex-row flex-col justify-between md:relative absolute top-0 right-0 md:translate-y-0 translate-y-[50%]  bg-blue-900 rounded-lg p-3">
-              <li className="p-1 font-bold cursor-pointer"><NavLink to='about'>ABOUT</NavLink></li>
-              <li className="p-1 font-bold cursor-pointer"><NavLink to='portfolio'>PORTFOLIO</NavLink></li>
-              <li className="p-1 font-bold cursor-pointer"><NavLink to='contact'>CONTACT</NavLink></li>
+            <ul className=" gap-5 md:flex md:flex-row flex-col justify-between  bg-blue-900 md:p-0 pt-5">
+              <li className="p-1 font-bold cursor-pointer "><NavLink to='about'>ABOUT</NavLink></li>
+              <li className="p-1 font-bold cursor-pointer "><NavLink to='portfolio'>PORTFOLIO</NavLink></li>
+              <li className="p-1 font-bold cursor-pointer "><NavLink to='contact'>CONTACT</NavLink></li>
             </ul>
           </div>
         </div>
         <button
-          className="md:hidden block absolute top-[35%] right-[5%]"
+          className="md:hidden block absolute top-[25px] right-[5%]"
           onClick={() => {
             isopen ===false?setIsopen(true):setIsopen(false);
           }}
