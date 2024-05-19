@@ -11,7 +11,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
 import NotFound from './Components/NotFound/NotFound';
 let x = createBrowserRouter([
-  {path:'/react1',element:<Layout/>,children:[
+  {path:'/react1/',element:<Layout/>,children:[
     {index:true,element:<Home/>},
     {path:'about',element:<About/>},
     {path:'portfolio',element:<Portfolio/>},
