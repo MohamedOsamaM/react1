@@ -1,0 +1,5 @@
+@media (min-width: 768px) {
+    nav > div > div{
+        display: block !important;
+    }
+}
