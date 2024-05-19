@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 .active {
-  background-color: blueviolet;
-  padding: 5px;
-  border-radius: 10px;
+  color: blueviolet;
+  padding-left: 10px;
+
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
